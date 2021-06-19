@@ -9,6 +9,6 @@ stage('SCM Checkout')
 stage('Compile-package')
 {
 def mvnHome=tool name: 'Default', type: 'maven'
-  echo {$mvnHome}/bin/mvn package
+  echo "{$mvnHome}/bin/mvn package"
 }
 }
