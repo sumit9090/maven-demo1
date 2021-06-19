@@ -15,6 +15,6 @@ def mvnHome=tool name: 'Default', type: 'maven'
 stage('Clean install')
 {
 def mvnHome=tool name: 'Default', type: 'maven'
-  echo "{$mvnHome}/bin/mvn clean install"
+  echo "{$mvnHome}/bin/mvn install"
 }
 }
