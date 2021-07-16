@@ -12,9 +12,4 @@ def mvnHome=tool name: 'Default', type: 'maven'
   echo "{$mvnHome}/bin/mvn package"
 }
 
-stage('Clean install')
-{
-def mvnHome=tool name: 'Default', type: 'maven'
-  echo "{$mvnHome}/bin/mvn test"
-}
-}
+
